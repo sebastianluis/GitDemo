@@ -21,6 +21,7 @@ app.use('/', index);
 app.use('/api', teacher);
 
 // error handler
+///comment
 app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.send({"status": 500, "error": err.message}); 
